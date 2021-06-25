@@ -30,13 +30,27 @@ const crazySum = function(num1, num2) {
     return total;
 };
 
-let q2SameNum = console.log("\nQ2:(same number)" , crazySum(2,2));
-let q2DifNum = console.log("Q2:(different number)" , crazySum(4,2));
+let q2SameNum = console.log("\nQ2(same number):" , crazySum(2,2));
+let q2DifNum = console.log("Q2(different number):" , crazySum(4,2));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+
+const crazyDiff = function(num1) {
+    let num = 19
+    let answer;
+    if(num1 > num){
+        answer = (num1 - num) * 3;
+    }else{
+        answer = num1 - num;
+    }
+    return answer;
+};
+
+let q3GreaterThan19 = console.log("\nQ3(greater than 19):" , crazyDiff(29));
+let q3 = console.log("Q3(lower than 19):" , crazyDiff(10));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
