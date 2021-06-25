@@ -126,17 +126,16 @@ Write a function "reverseString" to programmatically reverse a given string (es.
 */
 
 const reverseString = function(string1) {
-    return string1.split('').reverse().join('')
+    return string1.split('').reverse().join('');
 };
 
 let q7a = console.log("\nQ7(Strive):" , reverseString("Strive"));
 let q7b = console.log("Q7(School):" , reverseString("School"));
 
-/* WRITE YOUR CODE HERE */
-
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
+
 
 /* WRITE YOUR CODE HERE */
 
@@ -144,7 +143,18 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const cutString = function(string1) {
+    let string  = string1.split('');
+    string[0] = "";
+    let i = string.length - 1;
+    string[i] = "";
+    string = string.join('');
+    return string;
+};
+
+let q9a = console.log("\nQ9(Strive):" , cutString("Strive"));
+let q9b = console.log("Q9(School):" , cutString("School"));
+
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
