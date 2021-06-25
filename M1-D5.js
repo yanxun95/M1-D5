@@ -136,8 +136,24 @@ let q7b = console.log("Q7(School):" , reverseString("School"));
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
+const upperFirst = function(string1) {
+    let string  = string1.split('');
+    let first = string1.charAt(0);
+    let upper = first.toUpperCase();
+    string[0] = upper;
 
-/* WRITE YOUR CODE HERE */
+    for(let i = 0; i < string1.length; i++){
+        if(string1.charAt(i) == ' '){
+            let x = string1.charAt(i+1);
+            let y = x.toUpperCase();
+            string[i+1] = y;
+        }
+    }
+    return string.join('');
+};
+
+let q8a = console.log("\nQ8(strive school):" , upperFirst("strive school"));
+let q8b = console.log("Q8(strive):" , upperFirst("strive"));
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
