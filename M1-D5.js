@@ -56,6 +56,24 @@ let q3 = console.log("Q3(lower than 19):" , crazyDiff(10));
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
+const boundary = function(num1) {
+    let answer = true;
+    if (num1 >= 20 && num1 <= 100){
+        answer;
+    }else if (num1 === 400){
+        answer;
+    }else{
+        answer = false;
+    }
+    return answer;
+};
+
+let q4a = console.log("\nQ4(50):" , boundary(50));
+let q4b = console.log("Q4(20):" , boundary(20));
+let q4c = console.log("Q4(100):" , boundary(100));
+let q4d = console.log("Q4(400):" , boundary(400));
+let q4e = console.log("Q4(120):" , boundary(120));
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 5
