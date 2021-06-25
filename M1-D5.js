@@ -14,9 +14,24 @@ const area = function(l1, l2) {
     return area;
 };
 
+let q1 = console.log("Q1:" , area(2,2));
+
+
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+const crazySum = function(num1, num2) {
+    let total;
+    if(num1 === num2){
+        total = (num1 + num2) * 3;
+    }else{
+        total = num1 + num2;
+    }
+    return total;
+};
+
+let q2SameNum = console.log("\nQ2:(same number)" , crazySum(2,2));
+let q2DifNum = console.log("Q2:(different number)" , crazySum(4,2));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
