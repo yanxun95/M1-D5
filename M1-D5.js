@@ -160,7 +160,15 @@ let q9b = console.log("Q9(School):" , cutString("School"));
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
+const giveMeRandom = function(num1){
+    let array = [];
+    for(let i = 0; i < num1; i++){
+        array[i] = Math.floor(Math.random() * 11);
+    }
+    return array;
+}
+
+let q10a = console.log("\nQ10(7):" , giveMeRandom(7));
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
