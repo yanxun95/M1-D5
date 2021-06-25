@@ -100,6 +100,31 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
+const check3and7 = function(num1) {
+    let answer;
+    if(num1 >= 0){
+        if(num1 % 3 === 0 && num1 % 7 === 0){
+            answer = `${num1} is the multiple of 3 and 7.` ;
+        }else if(num1 % 3 === 0){
+            answer = `${num1} is the multiple of 3.` ;
+        }else if(num1 % 7 === 0){
+            answer = `${num1} is the multiple of 7.` ;
+        }else{
+            answer = `${num1} is not a multiple of 3 or a multiple of 7.` ;
+        }
+    }else{
+        answer = `${num1} is not a possitive number.` ;
+    }
+    return answer;
+};
+
+let q6a = console.log("\nQ5(12):" , check3and7(12));
+let q6b = console.log("Q5(28):" , check3and7(28));
+let q6c = console.log("Q5(10):" , check3and7(10));
+let q6d = console.log("Q5(21):" , check3and7(21));
+let q6e = console.log("Q5(0):" , check3and7(0));
+let q6f = console.log("Q5(-12):" , check3and7(-12));
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 7
