@@ -81,6 +81,18 @@ Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
+const strivify = function(string1) {
+    let strive = string1.substr(0, 6);
+    if (strive === "Strive"){
+        return string1;
+    }else{
+        return `Strive ${string1}`
+    }
+};
+
+let q5a = console.log("\nQ5(Strive):" , strivify("Strive"));
+let q5b = console.log("Q5(school):" , strivify("school"));
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 6
