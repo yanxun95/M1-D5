@@ -74,8 +74,6 @@ let q4c = console.log("Q4(100):" , boundary(100));
 let q4d = console.log("Q4(400):" , boundary(400));
 let q4e = console.log("Q4(120):" , boundary(120));
 
-/* WRITE YOUR CODE HERE */
-
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
@@ -92,8 +90,6 @@ const strivify = function(string1) {
 
 let q5a = console.log("\nQ5(Strive):" , strivify("Strive"));
 let q5b = console.log("Q5(school):" , strivify("school"));
-
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
@@ -118,18 +114,23 @@ const check3and7 = function(num1) {
     return answer;
 };
 
-let q6a = console.log("\nQ5(12):" , check3and7(12));
-let q6b = console.log("Q5(28):" , check3and7(28));
-let q6c = console.log("Q5(10):" , check3and7(10));
-let q6d = console.log("Q5(21):" , check3and7(21));
-let q6e = console.log("Q5(0):" , check3and7(0));
-let q6f = console.log("Q5(-12):" , check3and7(-12));
-
-/* WRITE YOUR CODE HERE */
+let q6a = console.log("\nQ6(12):" , check3and7(12));
+let q6b = console.log("Q6(28):" , check3and7(28));
+let q6c = console.log("Q6(10):" , check3and7(10));
+let q6d = console.log("Q6(21):" , check3and7(21));
+let q6e = console.log("Q6(0):" , check3and7(0));
+let q6f = console.log("Q6(-12):" , check3and7(-12));
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
+
+const reverseString = function(string1) {
+    return string1.split('').reverse().join('')
+};
+
+let q7a = console.log("\nQ7(Strive):" , reverseString("Strive"));
+let q7b = console.log("Q7(School):" , reverseString("School"));
 
 /* WRITE YOUR CODE HERE */
 
