@@ -24,7 +24,7 @@ const checkArray = function(arr){
 
 let array = giveMeRandom(7);
 console.log("The nunber inside the array: ", array)
-console.log("\nQ11, the sum of the numbers that bigger than 5 is:" , checkArray(array));
+console.log("\nEx11, the sum of the numbers that bigger than 5 is:" , checkArray(array));
 
 /* EXERCISE 12
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
@@ -46,7 +46,7 @@ const shippingCartTotal = function(arr){
     return total;
 }
 
-console.log("\nQ12:", shippingCartTotal(shoppingCart))
+console.log("\nEx12:", shippingCartTotal(shoppingCart))
 
 /* EXERCISE 13
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
@@ -59,7 +59,7 @@ const addToShoppingCart = function(obj){
     return shoppingCart.length;
 }
 
-console.log("\nQ13: There are", addToShoppingCart(newObject), "items in the shopping cart.");
+console.log("\nEx13: There are", addToShoppingCart(newObject), "items in the shopping cart.");
 
 /* EXERCISE 14
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
@@ -77,14 +77,19 @@ const maxShoppingCart = function(arr){
 }
 
 console.log("\nThis is the shooping cart:", shoppingCart)
-console.log("Q14: The most expensive item in the shooping cart is:", maxShoppingCart(shoppingCart));
+console.log("Ex14: The most expensive item in the shooping cart is:", maxShoppingCart(shoppingCart));
 
 /* EXERCISE 15
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-/* WRITE YOUR CODE HERE */
+const latestShoppingCart = function(arr){
+    let lastItem = arr.slice(-1);
+    return lastItem;
+}
+
+console.log("\nEx15: The last item is:", latestShoppingCart(shoppingCart));
 
 /* EXERCISE 16
 Create a function "loopUntil" which receives an integer x between 0 and 9.
