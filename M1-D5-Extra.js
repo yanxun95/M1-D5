@@ -96,13 +96,29 @@ Create a function "loopUntil" which receives an integer x between 0 and 9.
 The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 17
 Write a function "average" which receives an array and return the average value. The function automatically skips non-numeric entries in the array.
 */
 
-/* WRITE YOUR CODE HERE */
+const average = function(arr){
+    let total = 0;
+    let avg = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(typeof arr[i] === "number"){
+            total += arr[i];
+            avg += 1;
+        }else{
+            continue;
+        }
+    }
+    total = total/avg;
+    return total;
+}
+
+ex17Arr = [1, 2, 3, "strive", "school", 2];
+
+console.log("\nEx17: The average values of the array is:", average(ex17Arr));
 
 /* EXERCISE 18
 Write a function "longest" to find the longest string from an given array of strings.
