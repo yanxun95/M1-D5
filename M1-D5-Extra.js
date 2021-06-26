@@ -24,14 +24,14 @@ const checkArray = function(arr){
 
 let array = giveMeRandom(7);
 console.log("The nunber inside the array: ", array)
-console.log("Q11, the sum of the numbers that bigger than 5 is:" , checkArray(array));
+console.log("\nQ11, the sum of the numbers that bigger than 5 is:" , checkArray(array));
 
 /* EXERCISE 12
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
 
-shoopingCart = [
+shoppingCart = [
     {name:"coke",  id:1, price:1.5, quantity:10},
     {name:"fanta",  id:2, price:1, quantity:15},
     {name:"sprite",  id:3, price:2, quantity:5}
@@ -46,7 +46,7 @@ const shippingCartTotal = function(arr){
     return total;
 }
 
-console.log("Q12:", shippingCartTotal(shoopingCart))
+console.log("\nQ12:", shippingCartTotal(shoppingCart))
 
 /* EXERCISE 13
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
@@ -55,18 +55,29 @@ Create a function "addToShoppingCart" which receives a new object, adds it to sh
 
 let newObject = {name:"pepsi",  id:4, price:1.2, quantity:5};
 const addToShoppingCart = function(obj){
-    shoopingCart.push(obj);
-    return shoopingCart.length;
+    shoppingCart.push(obj);
+    return shoppingCart.length;
 }
 
-console.log("Q13: There are", addToShoppingCart(newObject), "items in the shopping cart.");
+console.log("\nQ13: There are", addToShoppingCart(newObject), "items in the shopping cart.");
 
 /* EXERCISE 14
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in the array.
 */
 
-/* WRITE YOUR CODE HERE */
+const maxShoppingCart = function(arr){
+    let largest = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(largest < arr[i].price){
+            largest = arr[i].price;
+        }
+    }
+    return largest
+}
+
+console.log("\nThis is the shooping cart:", shoppingCart)
+console.log("Q14: The most expensive item in the shooping cart is:", maxShoppingCart(shoppingCart));
 
 /* EXERCISE 15
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
