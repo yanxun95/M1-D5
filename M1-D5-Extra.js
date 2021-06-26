@@ -117,14 +117,24 @@ const average = function(arr){
 }
 
 ex17Arr = [1, 2, 3, "strive", "school", 2];
-
 console.log("\nEx17: The average values of the array is:", average(ex17Arr));
 
 /* EXERCISE 18
 Write a function "longest" to find the longest string from an given array of strings.
 */
 
-/* WRITE YOUR CODE HERE */
+const longest = function(arr){
+    let longest = "";
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length > longest.length){
+            longest = arr[i];
+        }
+    }
+    return longest;
+}
+
+ex18Arr = ["strive", "school", "longest"];
+console.log("\nEx18: The longest string in the array is:", longest(ex18Arr));
 
 /* EXERCISE 19
 Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
