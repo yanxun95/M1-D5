@@ -195,4 +195,20 @@ Ex.: X = 3, Y = 2
 "10","11","12"]
 */
 
-/* WRITE YOUR CODE HERE */
+const matrixGenerator = function(x,y){
+    let arr = new Array(y);
+
+    for(let i = 0; i < y; i++){
+        for(let j = 0; j < x; j++){
+            arr[i]=new Array(x)  
+        }
+    }
+    for(let i = 0; i < y; i++){
+        for(let j = 0; j < x; j++){
+            arr[i][j] = `${i}${j}`;
+        }
+    }
+    return arr;
+}
+
+console.log("\nEx21:", matrixGenerator(3,2));
