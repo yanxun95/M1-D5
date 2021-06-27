@@ -163,13 +163,22 @@ Write a function to create a very simple anti spam filter for your mailbox. The 
 Check if the email is valid using string methods. The email (in this example) is valid if the words SPAM and SCAM does not appear.
 */
 
-/* WRITE YOUR CODE HERE */
+const antiSpam = function(str){
+    let string = str.toLowerCase();
+    if(string.split(" ").includes("spam") || string.split(" ").includes("scam")){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+console.log("\nEx19: This email is:", antiSpam("scam hello"));
 
 /* EXERCISE 20
 Write a function that receives a date d as parameter and calculates the number of days passes since the d.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 21
 Write a function "matrixGenerator" that receives x and y as parameter. The result should be a matrix of x times y with, as value, the index of the position.
