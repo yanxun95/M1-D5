@@ -178,7 +178,15 @@ console.log("\nEx19: This email is:", antiSpam("scam hello"));
 Write a function that receives a date d as parameter and calculates the number of days passes since the d.
 */
 
+const checkDate = function(d){
+    let currentDate = new Date();
+    let cDay = currentDate.getDate()
+    let dayPass = cDay - d;
+    return dayPass;
+}
 
+let days = checkDate(12);
+console.log(`\nEx20: There are ${days} days since 12.`);
 
 /* EXERCISE 21
 Write a function "matrixGenerator" that receives x and y as parameter. The result should be a matrix of x times y with, as value, the index of the position.
