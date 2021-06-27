@@ -96,6 +96,28 @@ Create a function "loopUntil" which receives an integer x between 0 and 9.
 The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
+const loopUntil = function(x){
+    if(x < 9 && x > 0){
+        let currentTimes = 1;
+        let row = 0;
+
+        while(row < 3){
+            let randNum = Math.floor(Math.random() * 10);
+            console.log(`The ${currentTimes} random number is:`, randNum)
+            currentTimes++;
+            if(randNum > x){
+                row++;
+            }else{
+                row = 0;
+            }
+        }
+    }else{
+        console.log(`Number ${x} is not between 0 and 9.`)
+    }
+}
+
+console.log("\nEx16: The list of random number:");
+loopUntil(3);
 
 /* EXERCISE 17
 Write a function "average" which receives an array and return the average value. The function automatically skips non-numeric entries in the array.
